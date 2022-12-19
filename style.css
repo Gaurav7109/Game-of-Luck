@@ -1,0 +1,98 @@
+h2{
+	text-align: center; 
+}
+.dice{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	border: 2px solid blue;
+	border-radius: 10px;
+	margin: 10vh;
+	padding: 20px; 
+}
+.btn{
+	font-size: 18px; 
+	font-weight: bold; 
+	height: 40px;
+	width: 100px; 
+	align-items: center; 
+	border: 5px solid black;
+	border-radius: 5px; 
+	background-color: gray;
+}
+.btn:hover{
+	cursor: pointer;
+	background-color: whitesmoke;
+	
+}
+.box1{
+	width: 130px;
+	height: 130px;
+	border: 2px solid black; 
+	border-radius: 10px; 
+	margin: auto;
+	background-color: white;  
+}
+.box2{
+	width: 130px;
+	height: 130px;
+	border: 2px solid black; 
+	margin: auto; 
+	border-radius: 10px; 
+	background-color: white;
+}
+.bothDice{
+	display: flex;
+	justify-content: center; 
+}
+.dot{
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 55px;  
+  background-size: cover; 
+}
+.dot1{
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXl3mF2zPWfZlTZZPg_Y-YoJrD-vvxZB4X41BRkGk&s);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 130px;
+	height: 130px;
+}
+.dot2{
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpAd7yxoppWJchmB3OPK9Qa4IpOowkUZ3ytiBp1ayirBZGjRId1M76uyd8xeNdmjNuKKs&usqp=CAU);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 130px;
+	height: 130px;
+}
+.dot3{
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7kTI7uKR-HQXARySTnh_mh8jNswJLR2SNaJR8ZJ_6qCM-k8iZjzNEb78BCIezSeCleb4&usqp=CAU);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 140px;
+	height: 140px;
+}
+.dot4{
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT-vavdtvSoAM6cu7Vzenxpux0gwfNEPFJWSId-wc-AA&s);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 130px;
+	height: 130px;
+}
+.dot5{
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyx1px7pNFyJFqa4Szy_-EgH0jq0tpUVRmvwQpl_vYhhfD3su_kCLMqdaR8pDN4tnDQ7g&usqp=CAU);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 130px;
+	height: 130px;
+}
+.dot6{
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4l1LzBavWmmF6guxWXKBO1cnr8Le6Go3ytLFwQIk&s);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 130px;
+	height: 130px;
+}

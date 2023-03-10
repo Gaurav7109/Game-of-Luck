@@ -19,7 +19,6 @@ document.querySelector(".playerName1").innerHTML = player1;
 document.querySelector(".playerName2").innerHTML = player2;
 
 
-
 function refresh(){
 	
 	let button = document.querySelector(".btn");

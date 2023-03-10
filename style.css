@@ -1,19 +1,31 @@
-h2{
+h2,h1{
 	text-align: center; 
 }
+h3{
+	text-align: center; 
+}
+.playerName1, .playerValue1,.playerName2, .playerValue2{
+	font-size: 1.8em;   
+	text-align: center; 
+	font-weight: bold;
+	color: #f09c1f;
+}
+
 .dice{
-	width: 200px;
-	height: 200px;
-	background-color: red;
+	width: 180px;
+  height: 200px;
+  background-color: #14acd6;
 	border: 2px solid blue;
 	border-radius: 10px;
-	margin: 10vh;
+	margin: 5vh;
 	padding: 20px; 
 }
 .btn{
 	font-size: 18px; 
 	font-weight: bold; 
 	height: 40px;
+	margin-bottom: 20vh;
+  margin-top: 20vh;
 	width: 100px; 
 	align-items: center; 
 	border: 5px solid black;
@@ -42,8 +54,31 @@ h2{
 	background-color: white;
 }
 .bothDice{
-	display: flex;
-	justify-content: center; 
+	  display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*media query for dice to align in single column*/
+
+@media screen and (max-width: 690px) {
+  .dice{
+  	margin-left: 20vh; 
+  }
+  .btn{
+  	margin: 1vh; 
+  }
+  .dice{
+  	margin: 1vh; 
+  }
+  #d1{
+  	margin-left: 30vw;
+  	margin-right: 30vw; 
+  }
+   #d2{
+  	margin-left: 30vw;
+  	margin-right: 30vw; 
+  }
 }
 .dot{
   height: 20px;

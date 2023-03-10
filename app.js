@@ -1,16 +1,54 @@
-var player1 = prompt("enter the name of first player");
-var player2 = prompt("enter the name of second player");
+var player1 = prompt("Enter the name of First Player");
+while(player1 === "") {
+	
+	alert("please enter the name for the First Player");
+	player1 = prompt("Enter the name of First Player");
+}
+
+var player2 = prompt("Enter the name of Second Player");
+while(player2 === ""){
+	alert("please enter the name for Second Player");
+	player2 = prompt("Enter the name of second player");
+}
+while(player2 === player1){
+	alert("please enter the different name for Second Player");
+	player2 = prompt("Enter the name of second player");
+}
 
 document.querySelector(".playerName1").innerHTML = player1;
 document.querySelector(".playerName2").innerHTML = player2;
 
+
+
 function refresh(){
+	
+	let button = document.querySelector(".btn");
+	button.disabled = true;
+	setTimeout(refresh1, 1500);
+	 var music = new Audio('diceSound.mp3');
+  	music.play();
+	setTimeout(function(){
+		button.disabled = false;
+	},1500);
+}
+
+function refresh1()
+{
 	var first_Num = Math.random()*6;
 	first_Num = Math.floor(first_Num) +1;
 
 
 	var second_Num = Math.random()*6;
 	second_Num = Math.floor(second_Num) +1;
+
+	while(first_Num === second_Num){
+		first_Num = Math.random()*6;
+		first_Num = Math.floor(first_Num) +1;
+
+
+		second_Num = Math.random()*6;
+		second_Num = Math.floor(second_Num) +1;
+	}
 
 	document.querySelector(".playerValue1").innerHTML= first_Num;
 	document.querySelector(".playerValue2").innerHTML = second_Num;
@@ -139,3 +177,4 @@ function refresh(){
 		document.querySelector("h2").innerHTML = "Match tied. Click on refresh for another match."
 	}
 }
+
